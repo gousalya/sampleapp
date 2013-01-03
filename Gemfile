@@ -23,8 +23,7 @@ end
 
 gem 'jquery-rails'
 
-# REF: http://stackoverflow.com/questions/7718651/activerecorddangerousattributeerror
-gem 'safe_attributes'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
