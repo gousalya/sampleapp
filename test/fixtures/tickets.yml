@@ -1,0 +1,65 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  date: 2012-12-12 14:21:20
+  job_ticket_no: MyString
+  client_no: MyString
+  client_job_name: MyString
+  brand: MyString
+  product: MyString
+  activity: MyString
+  change_type: MyString
+  activity_status: MyString
+  version: MyString
+  priority: MyString
+  expected_deliver_date: 2012-12-12 14:21:20
+  quote_value: MyString
+  ncn_raised_by: MyString
+  onsite_coordinator: MyString
+  schedular: 2012-12-12 14:21:20
+  prevalidation_start: 2012-12-12 14:21:20
+  prevalidation_end: 2012-12-12 14:21:20
+  allocation: 2012-12-12 14:21:20
+  production: MyString
+  production_start: 2012-12-12 14:21:20
+  production_end: 2012-12-12 14:21:20
+  QA: MyString
+  QA_start: 2012-12-12 14:21:20
+  QA_end: 2012-12-12 14:21:20
+  ncn_start: 2012-12-12 14:21:20
+  production_complete: 2012-12-12 14:21:20
+  onsite_review_close: MyString
+  agency_review_close: MyString
+  deliver: MyString
+
+two:
+  date: 2012-12-12 14:21:20
+  job_ticket_no: MyString
+  client_no: MyString
+  client_job_name: MyString
+  brand: MyString
+  product: MyString
+  activity: MyString
+  change_type: MyString
+  activity_status: MyString
+  version: MyString
+  priority: MyString
+  expected_deliver_date: 2012-12-12 14:21:20
+  quote_value: MyString
+  ncn_raised_by: MyString
+  onsite_coordinator: MyString
+  schedular: 2012-12-12 14:21:20
+  prevalidation_start: 2012-12-12 14:21:20
+  prevalidation_end: 2012-12-12 14:21:20
+  allocation: 2012-12-12 14:21:20
+  production: MyString
+  production_start: 2012-12-12 14:21:20
+  production_end: 2012-12-12 14:21:20
+  QA: MyString
+  QA_start: 2012-12-12 14:21:20
+  QA_end: 2012-12-12 14:21:20
+  ncn_start: 2012-12-12 14:21:20
+  production_complete: 2012-12-12 14:21:20
+  onsite_review_close: MyString
+  agency_review_close: MyString
+  deliver: MyString

@@ -1,0 +1,137 @@
+<%= form_for(@ticket) do |f| %>
+  <% if @ticket.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ticket.errors.count, "error") %> prohibited this ticket from being saved:</h2>
+
+      <ul>
+      <% @ticket.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :date %><br />
+    <%= f.datetime_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :job_ticket_no %><br />
+    <%= f.text_field :job_ticket_no %>
+  </div>
+  <div class="field">
+    <%= f.label :client_no %><br />
+    <%= f.text_field :client_no %>
+  </div>
+  <div class="field">
+    <%= f.label :client_job_name %><br />
+    <%= f.text_field :client_job_name %>
+  </div>
+  <div class="field">
+    <%= f.label :brand %><br />
+    <%= f.text_field :brand %>
+  </div>
+  <div class="field">
+    <%= f.label :product %><br />
+    <%= f.text_field :product %>
+  </div>
+  <div class="field">
+    <%= f.label :activity %><br />
+    <%= f.text_field :activity %>
+  </div>
+  <div class="field">
+    <%= f.label :change_type %><br />
+    <%= f.text_field :change_type %>
+  </div>
+  <div class="field">
+    <%= f.label :activity_status %><br />
+    <%= f.text_field :activity_status %>
+  </div>
+  <div class="field">
+    <%= f.label :version %><br />
+    <%= f.text_field :version %>
+  </div>
+  <div class="field">
+    <%= f.label :priority %><br />
+    <%= f.text_field :priority %>
+  </div>
+  <div class="field">
+    <%= f.label :expected_deliver_date %><br />
+    <%= f.datetime_select :expected_deliver_date %>
+  </div>
+  <div class="field">
+    <%= f.label :quote_value %><br />
+    <%= f.text_field :quote_value %>
+  </div>
+  <div class="field">
+    <%= f.label :ncn_raised_by %><br />
+    <%= f.text_field :ncn_raised_by %>
+  </div>
+  <div class="field">
+    <%= f.label :onsite_coordinator %><br />
+    <%= f.text_field :onsite_coordinator %>
+  </div>
+  <div class="field">
+    <%= f.label :schedular %><br />
+    <%= f.datetime_select :schedular %>
+  </div>
+  <div class="field">
+    <%= f.label :prevalidation_start %><br />
+    <%= f.datetime_select :prevalidation_start %>
+  </div>
+  <div class="field">
+    <%= f.label :prevalidation_end %><br />
+    <%= f.datetime_select :prevalidation_end %>
+  </div>
+  <div class="field">
+    <%= f.label :allocation %><br />
+    <%= f.datetime_select :allocation %>
+  </div>
+  <div class="field">
+    <%= f.label :production %><br />
+    <%= f.text_field :production %>
+  </div>
+  <div class="field">
+    <%= f.label :production_start %><br />
+    <%= f.datetime_select :production_start %>
+  </div>
+  <div class="field">
+    <%= f.label :production_end %><br />
+    <%= f.datetime_select :production_end %>
+  </div>
+  <div class="field">
+    <%= f.label :QA %><br />
+    <%= f.text_field :QA %>
+  </div>
+  <div class="field">
+    <%= f.label :QA_start %><br />
+    <%= f.datetime_select :QA_start %>
+  </div>
+  <div class="field">
+    <%= f.label :QA_end %><br />
+    <%= f.datetime_select :QA_end %>
+  </div>
+  <div class="field">
+    <%= f.label :ncn_start %><br />
+    <%= f.datetime_select :ncn_start %>
+  </div>
+  <div class="field">
+    <%= f.label :production_complete %><br />
+    <%= f.datetime_select :production_complete %>
+  </div>
+  <div class="field">
+    <%= f.label :onsite_review_close %><br />
+    <%= f.text_field :onsite_review_close %>
+  </div>
+  <div class="field">
+    <%= f.label :agency_review_close %><br />
+    <%= f.text_field :agency_review_close %>
+  </div>
+  <div class="field">
+    <%= f.label :deliver %><br />
+    <%= f.text_field :deliver %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

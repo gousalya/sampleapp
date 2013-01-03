@@ -1,0 +1,81 @@
+<h1>Listing tickets</h1>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Job ticket no</th>
+    <th>Client no</th>
+    <th>Client job name</th>
+    <th>Brand</th>
+    <th>Product</th>
+    <th>Activity</th>
+    <th>Change type</th>
+    <th>Activity status</th>
+    <th>Version</th>
+    <th>Priority</th>
+    <th>Expected deliver date</th>
+    <th>Quote value</th>
+    <th>Ncn raised by</th>
+    <th>Onsite coordinator</th>
+    <th>Schedular</th>
+    <th>Prevalidation start</th>
+    <th>Prevalidation end</th>
+    <th>Allocation</th>
+    <th>Production</th>
+    <th>Production start</th>
+    <th>Production end</th>
+    <th>Qa</th>
+    <th>Qa start</th>
+    <th>Qa end</th>
+    <th>Ncn start</th>
+    <th>Production complete</th>
+    <th>Onsite review close</th>
+    <th>Agency review close</th>
+    <th>Deliver</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tickets.each do |ticket| %>
+  <tr>
+    <td><%= ticket.date %></td>
+    <td><%= ticket.job_ticket_no %></td>
+    <td><%= ticket.client_no %></td>
+    <td><%= ticket.client_job_name %></td>
+    <td><%= ticket.brand %></td>
+    <td><%= ticket.product %></td>
+    <td><%= ticket.activity %></td>
+    <td><%= ticket.change_type %></td>
+    <td><%= ticket.activity_status %></td>
+    <td><%= ticket.version %></td>
+    <td><%= ticket.priority %></td>
+    <td><%= ticket.expected_deliver_date %></td>
+    <td><%= ticket.quote_value %></td>
+    <td><%= ticket.ncn_raised_by %></td>
+    <td><%= ticket.onsite_coordinator %></td>
+    <td><%= ticket.schedular %></td>
+    <td><%= ticket.prevalidation_start %></td>
+    <td><%= ticket.prevalidation_end %></td>
+    <td><%= ticket.allocation %></td>
+    <td><%= ticket.production %></td>
+    <td><%= ticket.production_start %></td>
+    <td><%= ticket.production_end %></td>
+    <td><%= ticket.QA %></td>
+    <td><%= ticket.QA_start %></td>
+    <td><%= ticket.QA_end %></td>
+    <td><%= ticket.ncn_start %></td>
+    <td><%= ticket.production_complete %></td>
+    <td><%= ticket.onsite_review_close %></td>
+    <td><%= ticket.agency_review_close %></td>
+    <td><%= ticket.deliver %></td>
+    <td><%= link_to 'Show', ticket %></td>
+    <td><%= link_to 'Edit', edit_ticket_path(ticket) %></td>
+    <td><%= link_to 'Destroy', ticket, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Ticket', new_ticket_path %>

@@ -1,0 +1,155 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Date:</b>
+  <%= @ticket.date %>
+</p>
+
+<p>
+  <b>Job ticket no:</b>
+  <%= @ticket.job_ticket_no %>
+</p>
+
+<p>
+  <b>Client no:</b>
+  <%= @ticket.client_no %>
+</p>
+
+<p>
+  <b>Client job name:</b>
+  <%= @ticket.client_job_name %>
+</p>
+
+<p>
+  <b>Brand:</b>
+  <%= @ticket.brand %>
+</p>
+
+<p>
+  <b>Product:</b>
+  <%= @ticket.product %>
+</p>
+
+<p>
+  <b>Activity:</b>
+  <%= @ticket.activity %>
+</p>
+
+<p>
+  <b>Change type:</b>
+  <%= @ticket.change_type %>
+</p>
+
+<p>
+  <b>Activity status:</b>
+  <%= @ticket.activity_status %>
+</p>
+
+<p>
+  <b>Version:</b>
+  <%= @ticket.version %>
+</p>
+
+<p>
+  <b>Priority:</b>
+  <%= @ticket.priority %>
+</p>
+
+<p>
+  <b>Expected deliver date:</b>
+  <%= @ticket.expected_deliver_date %>
+</p>
+
+<p>
+  <b>Quote value:</b>
+  <%= @ticket.quote_value %>
+</p>
+
+<p>
+  <b>Ncn raised by:</b>
+  <%= @ticket.ncn_raised_by %>
+</p>
+
+<p>
+  <b>Onsite coordinator:</b>
+  <%= @ticket.onsite_coordinator %>
+</p>
+
+<p>
+  <b>Schedular:</b>
+  <%= @ticket.schedular %>
+</p>
+
+<p>
+  <b>Prevalidation start:</b>
+  <%= @ticket.prevalidation_start %>
+</p>
+
+<p>
+  <b>Prevalidation end:</b>
+  <%= @ticket.prevalidation_end %>
+</p>
+
+<p>
+  <b>Allocation:</b>
+  <%= @ticket.allocation %>
+</p>
+
+<p>
+  <b>Production:</b>
+  <%= @ticket.production %>
+</p>
+
+<p>
+  <b>Production start:</b>
+  <%= @ticket.production_start %>
+</p>
+
+<p>
+  <b>Production end:</b>
+  <%= @ticket.production_end %>
+</p>
+
+<p>
+  <b>Qa:</b>
+  <%= @ticket.QA %>
+</p>
+
+<p>
+  <b>Qa start:</b>
+  <%= @ticket.QA_start %>
+</p>
+
+<p>
+  <b>Qa end:</b>
+  <%= @ticket.QA_end %>
+</p>
+
+<p>
+  <b>Ncn start:</b>
+  <%= @ticket.ncn_start %>
+</p>
+
+<p>
+  <b>Production complete:</b>
+  <%= @ticket.production_complete %>
+</p>
+
+<p>
+  <b>Onsite review close:</b>
+  <%= @ticket.onsite_review_close %>
+</p>
+
+<p>
+  <b>Agency review close:</b>
+  <%= @ticket.agency_review_close %>
+</p>
+
+<p>
+  <b>Deliver:</b>
+  <%= @ticket.deliver %>
+</p>
+
+
+<%= link_to 'Edit', edit_ticket_path(@ticket) %> |
+<%= link_to 'Back', tickets_path %>
